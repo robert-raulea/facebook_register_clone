@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial;
+  font-size: 12px;
+  color: #1c1e21;
+}
+
+a {
+  text-decoration: none;
+  color: #385898;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  padding: 11px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  margin-bottom: 11px;
+  outline: none;
+}
+
+select {
+  padding: 0 20px 0 8px;
+  height: 36px;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 4px;
+  color: #1c1e21;
+}
+
+::placeholder {
+  color: rgb(155, 151, 151);
+  font-size: 15px;
+}
+
+/* Header */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+/* Register form */
+
+#register-form {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 432px;
+}
+
+.form-header {
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.form-header h1 {
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.form-header p {
+  color: #606770;
+  font-size: 15px;
+}
+
+.form-body {
+  padding: 16px;
+  border-top: 1px solid #dadde1;
+}
+
+.nume-prenume {
+  width: 399px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-mobil input,
+.parola input {
+  width: 100%;
+}
+
+.bth-container {
+  display: flex;
+}
+
+.bth-container select:nth-of-type(2),
+.bth-container select:nth-of-type(3) {
+  margin-left: 12px;
+  flex: 1;
+}
+
+.bth-container select:nth-of-type(1) {
+  flex: 1;
+}
+
+.bth-heading,
+.gender-heading {
+  color: #606770;
+  margin: 2px 0 6px;
+}
+
+.gender {
+  margin-top: 11px;
+}
+
+.gender-container {
+  display: flex;
+}
+
+.gender-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  flex: 1 0 auto;
+  padding: 0 10px;
+}
+
+.gender-container input {
+  margin: 0;
+}
+
+.gender-container label {
+  font-size: 15px;
+}
+
+.masculin,
+.personalizat {
+  margin-left: 12px;
+}
+
+/* Gender Personalizat/optional */
+/* javascript */
+
+.gen-optional {
+  display: none;
+}
+
+.gen-optional .gen-preferat option.op-pers:checked {
+}
+
+.gender .gen-optional .gen-preferat {
+  width: 100%;
+  margin: 11px 0 6px;
+  border: 1px solid #ccd0d5;
+}
+
+.gender .gen-preferat-heading {
+  color: #606770;
+}
+
+.gender .gen-optional input[type="text"] {
+  width: 100%;
+  margin-top: 11px;
+}
+
+/* Paragraf TOS */
+
+.tos {
+  margin: 11px 0;
+  font-size: 11px;
+  color: #777;
+}
+
+/* Register */
+.register-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.register-btn button {
+  border: none;
+  background-color: #00a400;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  height: 36px;
+  padding: 0 32px;
+  margin: 10px 0;
+  width: 200px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-btn button:hover {
+  background: #009900;
+}
+
+.login-btn {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.login-btn a {
+  font-size: 17px;
+  color: #1877ff;
+}
+
+.login-btn a:hover {
+  text-decoration: none;
+}
+
+/* Form border */
+
+.form-container {
+  border: solid 1px #ccd0d5;
+  border-top: none;
+  border-radius: 7px;
+  box-shadow: 0 10px 16px 2px #ccd0d5;
+}
